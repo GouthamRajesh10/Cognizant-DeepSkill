@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Community Event Portal</title>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!--Main-->
+    <main>
+        <div id="welcome-banner" 
+        style="color: white; background-color: rgb(89, 89, 233); font-weight: bold; border-radius: 15px; align-items: center; height: 50px; display: flex;justify-content: center">
+            Welcome back!  
+            <span style="color: rgb(234, 234, 74)"> Special Offer: Free Entry this weekend</span>
+        </div>
+        <table style="width:100%; border-collapse:collapse;">
+    <tr>
+        <td style="width:33.33%;">
+            <figure>
+                <img src="event1.jpg" alt="Event 1" caption="Festival"
+                     style="width:100%; height:250px; object-fit:cover;">
+                <figcaption>Festival</figcaption>
+            </figure>
+        </td>
+        <td style="width:33.33%;">
+            <figure>
+                <img src="event2.jpg" alt="Event 2" caption="Painting at the park"
+                     style="width:100%; height:250px; object-fit:cover;">
+                <figcaption>Painting at the park</figcaption>
+            </figure>
+        </td>
+        <td style="width:33.33%;">
+            <figure>
+            <img src="event3.jpg" alt="Event 3" caption="Marathon"
+                 style="width:100%; height: 250px; object-fit:cover;">
+                <figcaption>Marathon</figcaption>
+            </figure>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <figure>
+                <img src="event4.jpg" alt="Event 4" caption="Music Night"
+                     style="width:100%; height:250px; object-fit:cover;">
+                <figcaption>Music Night</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src="event5.jpg" alt="Event 5" caption="Tree Planting"
+                     style="width:100%; height:250px; object-fit:cover;">
+                <figcaption>Tree Planting</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src="event6.jpg" alt="Event 6" caption="Book Fair"
+                     style="width:100%; height:250px; object-fit:cover;">
+                <figcaption>Book Fair</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<h2>Register for an Event</h2>
+<form>
+    <table>
+    <tr>
+        <td>
+        <label>Full Name</label><br>
+        <input type="text" placeholder="Jane Doe" required>
+        </td>
+        <td>
+        <label>Email</label><br>
+        <input type="email" placeholder="jane.doe@example.com" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <label>Event date</label><br>
+        <input type="date" placeholder="dd/mm/yyyy" required>
+        </td>
+        <td>
+        <label>Event type</label><br>
+        <select required>
+            <option value="">Select an event type</option>
+            <option value="festival">Festival</option>
+            <option value="painting">Painting at the park</option>
+            <option value="marathon">Marathon</option>
+            <option value="music">Music Night</option>
+            <option value="tree">Tree Planting</option>
+            <option value="book">Book Fair</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <label>Message</label><br>
+        <textarea placeholder="Enter any additional comments here..." rows="4" cols="50"></textarea>
+        </td>
+    </tr>
+    <tr>
+    <td colspan="2" style="text-align:right;">
+        <button type="submit"
+                style="background-color:#534caf; color:white; padding:10px 20px; border-radius:5px; cursor:pointer;">
+            Register
+        </button>
+    </td>
+</tr>
+    </table>
+<output style="color: green; font-weight: bold; background-color: lightgreen; padding: 10px; border-radius: 5px;">
+    ✓ Registration confirmed! You'll receive a confirmation email shortly.
+</output>
+</form>
+<h2>Register for an Event</h2>
+<form>
+    <table>
+    <tr>
+        <td>
+        <label>Phone Number</label><br>
+        <input type="tel" placeholder="123-456-7890" onblur="if(this.value.length!=10) alert('Invalid number');" required>
+        </td>
+        <td>
+        <label>Event Type</label><br>
+        <select onchange="document.getElementById('fee').value=this.value" required>
+            <option value="">Select an event type</option>
+            <option value="10">Festival</option>
+            <option value="10">Painting at the park</option>
+            <option value="10">Marathon</option>
+            <option value="10">Music Night</option>
+            <option value="10">Tree Planting</option>
+            <option value="10">Book Fair</option>
+        </select>
+        Fee:
+        <output id="fee"></output>
+        </td>
+    </tr>
+    </main>
+
+    <!--Footer-->
+    <footer></footer>
+    
+</body>
+</html>

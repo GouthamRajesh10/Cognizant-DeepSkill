@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../JUnit, Mockito and SL4J"
+		},
+		{
+			"name": "ProjectName",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
