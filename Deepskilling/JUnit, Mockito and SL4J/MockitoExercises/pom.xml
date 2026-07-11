@@ -9,6 +9,13 @@
         <maven.compiler.release>21</maven.compiler.release>
         <exec.mainClass>org.yourcompany.yourproject.JUnitExercises</exec.mainClass>
     </properties>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
     <dependencies>
     <dependency>
         <groupId>junit</groupId>
@@ -22,5 +29,18 @@
         <version>5.12.0</version>
         <scope>test</scope>
     </dependency>
+        <!-- Explicit Byte Buddy artifacts required by recent Mockito versions -->
+        <dependency>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy</artifactId>
+            <version>1.14.15</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy-agent</artifactId>
+            <version>1.14.15</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>
