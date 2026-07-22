@@ -5,10 +5,10 @@ function App() {
   return (
     <div>
       <CalculateScore
-        Name="Abse Wahab"
+        Name="Goutham Rajesh"
         School="CUSAT"
-        Total={480}
-        Goal={6}
+        Total={320}
+        Goal={5}
       />
     </div>
   );
